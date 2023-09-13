@@ -1,0 +1,11 @@
+
+#gif {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    display: none;
+}
+
+#loading {
+    border: 1px solid red; 
+}
