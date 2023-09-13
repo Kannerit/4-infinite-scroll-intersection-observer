@@ -1,23 +1,23 @@
 let endOfThePage = 0;
 let preloading = false;
 
-// const showGif = () => {
-//     let gif = document.getElementById('gif');
-//     console.log(`showGif()`);
-//     gif.style.display = 'block';
-//     preloading = true;
-// }
+const showGif = () => {
+    let gif = document.getElementById('gif');
+    console.log(`showGif()`);
+    gif.style.display = 'block';
+    preloading = true;
+}
 
-// const hideGif = () => {
-//     let gif = document.getElementById('gif');
-//     console.log(`hideGif()`);
-//     gif.style.display = 'none';
-//     preloading = false;
-// }
+const hideGif = () => {
+    let gif = document.getElementById('gif');
+    console.log(`hideGif()`);
+    gif.style.display = 'none';
+    preloading = false;
+}
 
 const fetchData = () => {
     if (!preloading) {
-    // showGif();
+    showGif();
 
     fetch('https://akademia108.pl/api/ajax/get-users.php')
         .then(res => res.json())
@@ -40,7 +40,7 @@ const fetchData = () => {
                 content.appendChild(pWebsite);
             }
 
-            // hideGif();
+            hideGif();
             console.log(data);
         })
         .catch(error => {
